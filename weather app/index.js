@@ -8,10 +8,10 @@ const weatherIcon = document.querySelector('.weather-icon')
 
 
 async function checkWeather(city) {
-    const response = await fetch(apiurl + city + `&appid=${apikey}`)
+    const response = await fetch(apiurl + city + `&appid=${apikey}`);
 
 
-    var data = await response.json(); // pasing the json format
+    var data = await response.json(); // parsing / creating in  the json format
     console.log(data);
 
 
